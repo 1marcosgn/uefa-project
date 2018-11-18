@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7F2183B321A2135B00F5B750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183B221A2135B00F5B750 /* AppDelegate.swift */; };
-		7F2183B521A2135B00F5B750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183B421A2135B00F5B750 /* ViewController.swift */; };
 		7F2183B821A2135B00F5B750 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183B621A2135B00F5B750 /* Main.storyboard */; };
 		7F2183BA21A2135C00F5B750 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183B921A2135C00F5B750 /* Assets.xcassets */; };
 		7F2183BD21A2135C00F5B750 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183BB21A2135C00F5B750 /* LaunchScreen.storyboard */; };
+		7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */; };
+		7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183D121A22F7500F5B750 /* UEFAStandingCell.swift */; };
+		7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183D221A22F7500F5B750 /* UEFAStandingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F2183AF21A2135B00F5B750 /* UEFAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UEFAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2183B221A2135B00F5B750 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F2183B421A2135B00F5B750 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F2183B721A2135B00F5B750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F2183B921A2135C00F5B750 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F2183BC21A2135C00F5B750 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F2183BE21A2135C00F5B750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingsTableViewController.swift; sourceTree = "<group>"; };
+		7F2183D121A22F7500F5B750 /* UEFAStandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingCell.swift; sourceTree = "<group>"; };
+		7F2183D221A22F7500F5B750 /* UEFAStandingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UEFAStandingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		7F2183B121A2135B00F5B750 /* UEFAProject */ = {
 			isa = PBXGroup;
 			children = (
+				7F2183CE21A22D6800F5B750 /* StandingsTableView */,
+				7F2183C621A22BEE00F5B750 /* StandingCell */,
 				7F2183B221A2135B00F5B750 /* AppDelegate.swift */,
-				7F2183B421A2135B00F5B750 /* ViewController.swift */,
 				7F2183B621A2135B00F5B750 /* Main.storyboard */,
 				7F2183B921A2135C00F5B750 /* Assets.xcassets */,
 				7F2183BB21A2135C00F5B750 /* LaunchScreen.storyboard */,
 				7F2183BE21A2135C00F5B750 /* Info.plist */,
 			);
 			path = UEFAProject;
+			sourceTree = "<group>";
+		};
+		7F2183C621A22BEE00F5B750 /* StandingCell */ = {
+			isa = PBXGroup;
+			children = (
+				7F2183D121A22F7500F5B750 /* UEFAStandingCell.swift */,
+				7F2183D221A22F7500F5B750 /* UEFAStandingCell.xib */,
+			);
+			path = StandingCell;
+			sourceTree = "<group>";
+		};
+		7F2183CE21A22D6800F5B750 /* StandingsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */,
+			);
+			path = StandingsTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +146,7 @@
 			files = (
 				7F2183BD21A2135C00F5B750 /* LaunchScreen.storyboard in Resources */,
 				7F2183BA21A2135C00F5B750 /* Assets.xcassets in Resources */,
+				7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */,
 				7F2183B821A2135B00F5B750 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2183B521A2135B00F5B750 /* ViewController.swift in Sources */,
+				7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */,
+				7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */,
 				7F2183B321A2135B00F5B750 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
