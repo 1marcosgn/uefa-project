@@ -11,18 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UEFAStandingCell" id="KGk-i7-Jjw" customClass="UEFAStandingCell" customModule="UEFAProject" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UEFAStandingCellLarge" id="KGk-i7-Jjw" customClass="UEFAStandingsDetailLargeCell" customModule="UEFAProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standing Multiple Team Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abe-CH-QV9">
-                        <rect key="frame" x="16" y="12" width="244" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UEFAStandings Detail Large Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veq-MO-9kD">
+                        <rect key="frame" x="16" y="11" width="279" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="244" id="0tX-k0-8KZ"/>
-                            <constraint firstAttribute="height" constant="21" id="1m8-d0-XBk"/>
+                            <constraint firstAttribute="height" constant="21" id="dK1-Vl-Li1"/>
+                            <constraint firstAttribute="width" constant="279" id="hKJ-YY-VnS"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -30,8 +30,8 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="abe-CH-QV9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1kE-SC-wRd"/>
-                    <constraint firstItem="abe-CH-QV9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="cl4-95-cby"/>
+                    <constraint firstItem="veq-MO-9kD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="BR1-SR-Yty"/>
+                    <constraint firstItem="veq-MO-9kD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sh5-b1-24w"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -1,5 +1,5 @@
 //
-//  UEFAStandingsTableViewController.swift
+//  UEFAStandingsDetailViewController.swift
 //  UEFAProject
 //
 //  Created by Marcos Garcia on 11/18/18.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class UEFAStandingsTableViewController: UITableViewController {
-
+class UEFAStandingsDetailViewController: UITableViewController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(UINib(nibName: "UEFAStandingCell", bundle: nil), forCellReuseIdentifier: "UEFAStandingCell")
+        tableView.register(UINib(nibName: "UEFAStandingsDetailLargeCell", bundle: nil), forCellReuseIdentifier: "UEFAStandingCellLarge")
         tableView.tableFooterView = UIView()
-        
     }
 
     // MARK: - Table view data source
@@ -27,29 +26,23 @@ class UEFAStandingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 1
     }
 
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell: UEFAStandingCell = UEFAStandingCell(frame: CGRect.zero)
-        
-        guard let standingCell = tableView.dequeueReusableCell(withIdentifier: "UEFAStandingCell", for: indexPath) as? UEFAStandingCell else {
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UEFAStandingCellLarge", for: indexPath) as? UEFAStandingsDetailLargeCell
 
         // Configure the cell...
-        return standingCell
+
+        return cell!
     }
     
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //TODO: ADD Logic to pass selected element .. create a protocol here to send the `SelectedStanding` conform it with the required properties
-        self.navigationController?.pushViewController(UEFAStandingsDetailViewController(), animated: true)
-        
+        self.navigationController?.present(UEFATeamDetailViewController(), animated: true, completion: nil)
     }
-
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -95,5 +88,5 @@ class UEFAStandingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

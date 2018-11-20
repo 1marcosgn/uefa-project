@@ -14,6 +14,12 @@
 		7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */; };
 		7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183D121A22F7500F5B750 /* UEFAStandingCell.swift */; };
 		7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183D221A22F7500F5B750 /* UEFAStandingCell.xib */; };
+		7F2183DD21A2603800F5B750 /* UEFAStandingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183DB21A2603800F5B750 /* UEFAStandingsDetailViewController.swift */; };
+		7F2183DE21A2603800F5B750 /* UEFAStandingsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183DC21A2603800F5B750 /* UEFAStandingsDetailViewController.xib */; };
+		7F2183E121A2606200F5B750 /* UEFATeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183DF21A2606200F5B750 /* UEFATeamDetailViewController.swift */; };
+		7F2183E221A2606200F5B750 /* UEFATeamDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183E021A2606200F5B750 /* UEFATeamDetailViewController.xib */; };
+		7F2183E621A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183E421A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift */; };
+		7F2183E721A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2183E521A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingsTableViewController.swift; sourceTree = "<group>"; };
 		7F2183D121A22F7500F5B750 /* UEFAStandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingCell.swift; sourceTree = "<group>"; };
 		7F2183D221A22F7500F5B750 /* UEFAStandingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UEFAStandingCell.xib; sourceTree = "<group>"; };
+		7F2183DB21A2603800F5B750 /* UEFAStandingsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingsDetailViewController.swift; sourceTree = "<group>"; };
+		7F2183DC21A2603800F5B750 /* UEFAStandingsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UEFAStandingsDetailViewController.xib; sourceTree = "<group>"; };
+		7F2183DF21A2606200F5B750 /* UEFATeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFATeamDetailViewController.swift; sourceTree = "<group>"; };
+		7F2183E021A2606200F5B750 /* UEFATeamDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UEFATeamDetailViewController.xib; sourceTree = "<group>"; };
+		7F2183E421A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAStandingsDetailLargeCell.swift; sourceTree = "<group>"; };
+		7F2183E521A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UEFAStandingsDetailLargeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,9 @@
 		7F2183B121A2135B00F5B750 /* UEFAProject */ = {
 			isa = PBXGroup;
 			children = (
+				7F2183E821A2645E00F5B750 /* AppSettings */,
+				7F2183DA21A25FBF00F5B750 /* TeamDetail */,
+				7F2183D521A25E6000F5B750 /* StandingsDetail */,
 				7F2183CE21A22D6800F5B750 /* StandingsTableView */,
 				7F2183C621A22BEE00F5B750 /* StandingCell */,
 				7F2183B221A2135B00F5B750 /* AppDelegate.swift */,
@@ -84,6 +99,41 @@
 				7F2183CF21A22DAC00F5B750 /* UEFAStandingsTableViewController.swift */,
 			);
 			path = StandingsTableView;
+			sourceTree = "<group>";
+		};
+		7F2183D521A25E6000F5B750 /* StandingsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7F2183E321A2607600F5B750 /* StandingsDetailCells */,
+				7F2183DB21A2603800F5B750 /* UEFAStandingsDetailViewController.swift */,
+				7F2183DC21A2603800F5B750 /* UEFAStandingsDetailViewController.xib */,
+			);
+			path = StandingsDetail;
+			sourceTree = "<group>";
+		};
+		7F2183DA21A25FBF00F5B750 /* TeamDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7F2183DF21A2606200F5B750 /* UEFATeamDetailViewController.swift */,
+				7F2183E021A2606200F5B750 /* UEFATeamDetailViewController.xib */,
+			);
+			path = TeamDetail;
+			sourceTree = "<group>";
+		};
+		7F2183E321A2607600F5B750 /* StandingsDetailCells */ = {
+			isa = PBXGroup;
+			children = (
+				7F2183E421A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift */,
+				7F2183E521A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib */,
+			);
+			path = StandingsDetailCells;
+			sourceTree = "<group>";
+		};
+		7F2183E821A2645E00F5B750 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +194,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2183DE21A2603800F5B750 /* UEFAStandingsDetailViewController.xib in Resources */,
 				7F2183BD21A2135C00F5B750 /* LaunchScreen.storyboard in Resources */,
+				7F2183E221A2606200F5B750 /* UEFATeamDetailViewController.xib in Resources */,
+				7F2183E721A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib in Resources */,
 				7F2183BA21A2135C00F5B750 /* Assets.xcassets in Resources */,
 				7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */,
 				7F2183B821A2135B00F5B750 /* Main.storyboard in Resources */,
@@ -158,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2183DD21A2603800F5B750 /* UEFAStandingsDetailViewController.swift in Sources */,
 				7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */,
 				7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */,
 				7F2183B321A2135B00F5B750 /* AppDelegate.swift in Sources */,
+				7F2183E121A2606200F5B750 /* UEFATeamDetailViewController.swift in Sources */,
+				7F2183E621A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
