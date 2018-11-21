@@ -24,6 +24,11 @@
 		7F2183F921A4D72100F5B750 /* UEFAProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */; };
 		7F21840121A4D78D00F5B750 /* UEFAProtocolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */; };
 		7F21840321A4DA3700F5B750 /* UEFAProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183ED21A4D48C00F5B750 /* UEFAProtocols.swift */; };
+		7FD4A08821A5EC54002F963B /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4A08721A5EC54002F963B /* Services.plist */; };
+		7FD4A08B21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */; };
+		7FD4A08C21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */; };
+		7FD4A08E21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */; };
+		7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,9 @@
 		7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAProjectTests.swift; sourceTree = "<group>"; };
 		7F2183FA21A4D72100F5B750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAProtocolsTests.swift; sourceTree = "<group>"; };
+		7FD4A08721A5EC54002F963B /* Services.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
+		7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesProtocol.swift; sourceTree = "<group>"; };
+		7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 		7F2183B121A2135B00F5B750 /* UEFAProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FD4A08421A5EC04002F963B /* Resources */,
+				7FD4A08921A5EEB4002F963B /* Sources */,
 				7F2183EA21A4C04D00F5B750 /* DataModels */,
 				7F2183DA21A25FBF00F5B750 /* TeamDetail */,
 				7F2183D521A25E6000F5B750 /* StandingsDetail */,
@@ -173,6 +183,31 @@
 				7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */,
 			);
 			path = UEFAProjectTests;
+			sourceTree = "<group>";
+		};
+		7FD4A08421A5EC04002F963B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08521A5EC14002F963B /* Configurations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7FD4A08521A5EC14002F963B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08721A5EC54002F963B /* Services.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		7FD4A08921A5EEB4002F963B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */,
+				7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +295,7 @@
 				7F2183BD21A2135C00F5B750 /* LaunchScreen.storyboard in Resources */,
 				7F2183E221A2606200F5B750 /* UEFATeamDetailViewController.xib in Resources */,
 				7F2183E721A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib in Resources */,
+				7FD4A08821A5EC54002F963B /* Services.plist in Resources */,
 				7F2183BA21A2135C00F5B750 /* Assets.xcassets in Resources */,
 				7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */,
 				7F2183B821A2135B00F5B750 /* Main.storyboard in Resources */,
@@ -281,9 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2183DD21A2603800F5B750 /* UEFAStandingsDetailViewController.swift in Sources */,
+				7FD4A08E21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */,
 				7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */,
 				7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */,
 				7F2183B321A2135B00F5B750 /* AppDelegate.swift in Sources */,
+				7FD4A08B21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */,
 				7F2183EE21A4D48C00F5B750 /* UEFAProtocols.swift in Sources */,
 				7F2183E121A2606200F5B750 /* UEFATeamDetailViewController.swift in Sources */,
 				7F2183E621A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift in Sources */,
@@ -294,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD4A08C21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */,
 				7F21840321A4DA3700F5B750 /* UEFAProtocols.swift in Sources */,
+				7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */,
 				7F21840121A4D78D00F5B750 /* UEFAProtocolsTests.swift in Sources */,
 				7F2183F921A4D72100F5B750 /* UEFAProjectTests.swift in Sources */,
 			);
