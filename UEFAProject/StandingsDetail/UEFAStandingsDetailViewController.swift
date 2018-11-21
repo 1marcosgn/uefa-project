@@ -31,7 +31,7 @@ class UEFAStandingsDetailViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UEFAStandingCellLarge1", for: indexPath) as? UEFAStandingsDetailLargeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UEFAStandingCellLarge", for: indexPath) as? UEFAStandingsDetailLargeCell
 
         // Configure the cell...
 
