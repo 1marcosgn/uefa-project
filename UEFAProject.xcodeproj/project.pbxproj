@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				7F2183EA21A4C04D00F5B750 /* DataModels */,
-				7F2183E821A2645E00F5B750 /* AppSettings */,
 				7F2183DA21A25FBF00F5B750 /* TeamDetail */,
 				7F2183D521A25E6000F5B750 /* StandingsDetail */,
 				7F2183CE21A22D6800F5B750 /* StandingsTableView */,
@@ -156,13 +155,6 @@
 				7F2183E521A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib */,
 			);
 			path = StandingsDetailCells;
-			sourceTree = "<group>";
-		};
-		7F2183E821A2645E00F5B750 /* AppSettings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppSettings;
 			sourceTree = "<group>";
 		};
 		7F2183EA21A4C04D00F5B750 /* DataModels */ = {
