@@ -98,6 +98,49 @@ class UEFAProtocolsTests: XCTestCase {
         XCTAssertEqual(sut.stage, Stage.group, "Stage should be the same that the one provided at initialization")
         XCTAssertEqual(sut.type, Type.total, "Type should be the same that the one provided at initialization")
     }
+    
+    func test_UEFATeamRecord_Initialized_ShouldHaveValidInformation() {
+        ///Given
+        let sut = mockUEFATeamRecord.init()
+        let teamTesting = mockUEFATeam.init()
+        
+        ///Initial values should not be nil
+        XCTAssertNotNil(sut.won, "Won games should not be nil")
+        XCTAssertNotNil(sut.draw, "Draw games should not be nil")
+        XCTAssertNotNil(sut.lost, "Lost games should not be nil")
+        
+        ///Values should match
+        XCTAssertEqual(sut.won, teamTesting.won, "Numbew of games won sould match with the information provided")
+        XCTAssertEqual(sut.draw, teamTesting.draw, "Numbew of games draw sould match with the information provided")
+        XCTAssertEqual(sut.lost, teamTesting.lost, "Numbew of games lost sould match with the information provided")
+    }
+    
+    func test_UEFAStandingTeamInfo_Initialized_ShouldHaveValidInformation() {
+        ///Given
+        let sut = mockUEFAStandingTeamInfo.init()
+        let testTeam = mockUEFATeam.init()
+        let testRecord = mockUEFATeamRecord.init()
+        
+        ///Initial values should not be nil
+        XCTAssertNotNil(sut.teamThumbnailURL, "team Thumbnail URL should not be nil")
+        XCTAssertNotNil(sut.name, "name should not be nil")
+        XCTAssertNotNil(sut.record, "record should not be nil")
+        XCTAssertNotNil(sut.position, "position should not be nil")
+
+        ///Values should match
+        XCTAssertEqual(sut.teamThumbnailURL, testTeam.teamBasicInfo.crestUrl, "Thumnbnail url should match")
+        XCTAssertEqual(sut.name, testTeam.teamBasicInfo.name, "Name of the team should match information provided")
+        XCTAssertEqual(sut.record.won, testRecord.won, "Record should have the same information for games won")
+        XCTAssertEqual(sut.position, 1, "Position should match information provided")
+    }
+    
+    func test_UEFAStandingsDetail_Initialized_ShouldHaveValidInformation() {
+        ///Given
+        let sut = mockUEFAStandingsDetail.init()
+        
+        XCTAssertNotNil(sut.teams, "Array of teams should not be nil")
+        XCTAssertEqual(sut.teams?.count, 3, "Array should contain 3 elements")
+    }
 }
 
 /// Mock Object to test Team Summary
@@ -153,3 +196,43 @@ public class mockUEFAGroup: NSObject, UEFAGroup {
         self.type = .total
     }
 }
+
+public class mockUEFATeamRecord: NSObject, UEFATeamRecord {
+    public var won: Int
+    public var draw: Int
+    public var lost: Int
+    
+    let teamTest = mockUEFATeam.init()
+    
+    public override init() {
+        self.won = teamTest.won
+        self.draw = teamTest.draw
+        self.lost = teamTest.lost
+    }
+}
+
+public class mockUEFAStandingTeamInfo: NSObject, UEFAStandingTeamInfo {
+    public var teamThumbnailURL: URL?
+    public var name: String
+    public var record: UEFATeamRecord
+    public var position: Int
+    
+    let testTeam = mockUEFATeam.init()
+    let testRecord = mockUEFATeamRecord.init()
+    
+    public override init() {
+        self.teamThumbnailURL = testTeam.teamBasicInfo.crestUrl
+        self.name = testTeam.teamBasicInfo.name
+        self.record = testRecord
+        self.position = testTeam.position
+    }
+}
+
+public class mockUEFAStandingsDetail: NSObject, UEFAStandingsDetail {
+    public var teams: [UEFAStandingTeamInfo]?
+    
+    public override init() {
+        teams = [mockUEFAStandingTeamInfo.init(), mockUEFAStandingTeamInfo.init(), mockUEFAStandingTeamInfo.init()]
+    }
+}
+

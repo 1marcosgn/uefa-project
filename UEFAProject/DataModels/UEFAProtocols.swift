@@ -74,6 +74,37 @@ public protocol UEFAGroup: class {
     var type: Type? { get }
 }
 
+/// Protocol that manages all the Standings of the competition
 public protocol UEFAStandings: class {
+    /// Array that contains the available groups with detailed information
     var standings: [UEFAGroup]? { get set }
 }
+
+/// Protocol to handle team games record
+public protocol UEFATeamRecord: class {
+    /// Represents number of games won
+    var won: Int { get }
+    /// Represents number of games draw
+    var draw: Int { get }
+    /// Represents number of games lost
+    var lost: Int { get }
+}
+
+/// Protocol to display team information in a large detail cells
+public protocol UEFAStandingTeamInfo: class {
+    /// The url for the crest image of the team
+    var teamThumbnailURL: URL? { get }
+    /// The team name
+    var name: String { get }
+    /// Represents the record of games for the team
+    var record: UEFATeamRecord { get }
+    /// Indicates the position of the team in the group
+    var position: Int { get }
+}
+
+/// Protocol to handle the Large details for standings
+public protocol UEFAStandingsDetail: class {
+    /// Array of standings for the teams
+    var teams: [UEFAStandingTeamInfo]? { get }
+}
+
