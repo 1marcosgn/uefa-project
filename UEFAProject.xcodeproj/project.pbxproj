@@ -31,6 +31,8 @@
 		7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */; };
 		7FD4A09321A60B3C002F963B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09121A60B3C002F963B /* AlamofireImage.framework */; };
 		7FD4A09421A60B3C002F963B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
+		7FE47BE221B37EED00BBC4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
+		7FE47BE321B37EF100BBC4E2 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09121A60B3C002F963B /* AlamofireImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE47BE221B37EED00BBC4E2 /* Alamofire.framework in Frameworks */,
+				7FE47BE321B37EF100BBC4E2 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +580,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,6 +604,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
