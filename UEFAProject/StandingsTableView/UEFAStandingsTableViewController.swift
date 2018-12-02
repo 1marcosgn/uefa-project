@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Alamofire
 
 class UEFAStandingsTableViewController: UITableViewController {
 
@@ -16,15 +15,6 @@ class UEFAStandingsTableViewController: UITableViewController {
 
         tableView.register(UINib(nibName: "UEFAStandingCell", bundle: nil), forCellReuseIdentifier: "UEFAStandingCell")
         tableView.tableFooterView = UIView()
-        
-        //TODO: REMOVE THIS CODE
-//        let headers: HTTPHeaders = [
-//            "X-Auth-Token": "8bbe4185385c4fe09a593792055d2e3e"
-//        ]
-//
-//        Alamofire.request("https://api.football-data.org/v2/competitions/2001/standings", headers: headers).responseJSON { response in
-//            debugPrint(response)
-//        }
     }
 
     // MARK: - Table view data source

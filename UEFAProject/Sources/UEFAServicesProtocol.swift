@@ -15,7 +15,7 @@ public protocol UEFAServicesProtocol {
 //    var competition
     
     /// Fetch the standings information
-    func fetchStandingsFor(_ competitionID: Int) -> [UEFAGroup]?
+    func fetchStandingsFor(_ competitionID: Int, completion: @escaping (Bool) -> ())
     /// Fetch the information for a particular team
-    func fetchTeamInfo(_ withId: Int) -> UEFATeam?
+    func fetchTeamInfo(_ withId: Int, completion: @escaping (Bool) -> ())
 }

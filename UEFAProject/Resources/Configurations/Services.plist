@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>xAuthToken</key>
+	<key>X-Auth-Token</key>
 	<string>8bbe4185385c4fe09a593792055d2e3e</string>
 	<key>standings</key>
-	<string>http://api.football-data.org/v2/competitions/{competitionID}/standings</string>
+	<string>https://api.football-data.org/v2/competitions/query-param/standings</string>
 	<key>teamInfo</key>
-	<string>http://api.football-data.org/v2/teams/{teamID}</string>
+	<string>https://api.football-data.org/v2/teams/query-param</string>
 </dict>
 </plist>
