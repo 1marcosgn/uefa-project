@@ -12,7 +12,6 @@ import Alamofire
 final class UEFAServicesImplementation: NSObject, UEFAServicesProtocol {
     
     // start to create objects here with the required information -> USE THIS CLASS TO GET THE JSON DICTIONARIES ONLY
-    
     // make this objects injectable so it can be mocked for testing purposes
     // add mock json files to test
     
@@ -26,8 +25,10 @@ final class UEFAServicesImplementation: NSObject, UEFAServicesProtocol {
         static let queryParam = "query-param"
     }
     
+    /// Shared instance of Services Implementation
     public static let sharedInstance = UEFAServicesImplementation()
     
+    /// Method to get the Standings based on a competition id
     func fetchStandingsFor(_ competitionID: Int, completion: @escaping (Bool) -> ()) {
         guard let standingsRequest = getStandingsAPI()?.replacingOccurrences(of: Constants.queryParam, with: String(competitionID)) else {
             return
@@ -39,6 +40,7 @@ final class UEFAServicesImplementation: NSObject, UEFAServicesProtocol {
         }
     }
     
+    /// Method to get the Team Info based on a team id
     func fetchTeamInfo(_ withId: Int, completion: @escaping (Bool) -> ()) {
         guard let teamsRequest = getTeamInfoAPI()?.replacingOccurrences(of: Constants.queryParam, with: String(withId)) else {
             return

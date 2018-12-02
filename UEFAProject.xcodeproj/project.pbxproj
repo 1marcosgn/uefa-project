@@ -33,6 +33,7 @@
 		7FD4A09421A60B3C002F963B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
 		7FE47BE221B37EED00BBC4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
 		7FE47BE321B37EF100BBC4E2 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09121A60B3C002F963B /* AlamofireImage.framework */; };
+		7FE47BE521B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesImplementation.swift; sourceTree = "<group>"; };
 		7FD4A09121A60B3C002F963B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		7FD4A09221A60B3C002F963B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesImplementationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */,
 				7F2183FA21A4D72100F5B750 /* Info.plist */,
 				7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */,
+				7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */,
 			);
 			path = UEFAProjectTests;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE47BE521B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift in Sources */,
 				7FD4A08C21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */,
 				7F21840321A4DA3700F5B750 /* UEFAProtocols.swift in Sources */,
 				7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */,
