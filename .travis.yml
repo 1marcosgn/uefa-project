@@ -1,7 +1,7 @@
 language: swift
 osx_image: xcode10.0
 xcode_project: UEFAProject.xcodeproj
-xcode_scheme: UEFAProjectTests
+xcode_scheme: UEFAProject
 
 cache:
   directories:
