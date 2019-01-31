@@ -24,6 +24,16 @@
 		7F2183F921A4D72100F5B750 /* UEFAProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */; };
 		7F21840121A4D78D00F5B750 /* UEFAProtocolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */; };
 		7F21840321A4DA3700F5B750 /* UEFAProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2183ED21A4D48C00F5B750 /* UEFAProtocols.swift */; };
+		7FD4A08821A5EC54002F963B /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4A08721A5EC54002F963B /* Services.plist */; };
+		7FD4A08B21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */; };
+		7FD4A08C21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */; };
+		7FD4A08E21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */; };
+		7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */; };
+		7FD4A09321A60B3C002F963B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09121A60B3C002F963B /* AlamofireImage.framework */; };
+		7FD4A09421A60B3C002F963B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
+		7FE47BE221B37EED00BBC4E2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09221A60B3C002F963B /* Alamofire.framework */; };
+		7FE47BE321B37EF100BBC4E2 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD4A09121A60B3C002F963B /* AlamofireImage.framework */; };
+		7FE47BE521B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +67,12 @@
 		7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAProjectTests.swift; sourceTree = "<group>"; };
 		7F2183FA21A4D72100F5B750 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAProtocolsTests.swift; sourceTree = "<group>"; };
+		7FD4A08721A5EC54002F963B /* Services.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Services.plist; sourceTree = "<group>"; };
+		7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesProtocol.swift; sourceTree = "<group>"; };
+		7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesImplementation.swift; sourceTree = "<group>"; };
+		7FD4A09121A60B3C002F963B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		7FD4A09221A60B3C002F963B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEFAServicesImplementationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD4A09321A60B3C002F963B /* AlamofireImage.framework in Frameworks */,
+				7FD4A09421A60B3C002F963B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE47BE221B37EED00BBC4E2 /* Alamofire.framework in Frameworks */,
+				7FE47BE321B37EF100BBC4E2 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +103,7 @@
 				7F2183B121A2135B00F5B750 /* UEFAProject */,
 				7F2183F721A4D72100F5B750 /* UEFAProjectTests */,
 				7F2183B021A2135B00F5B750 /* Products */,
+				7FD4A09021A60B3C002F963B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +119,8 @@
 		7F2183B121A2135B00F5B750 /* UEFAProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FD4A08421A5EC04002F963B /* Resources */,
+				7FD4A08921A5EEB4002F963B /* Sources */,
 				7F2183EA21A4C04D00F5B750 /* DataModels */,
 				7F2183DA21A25FBF00F5B750 /* TeamDetail */,
 				7F2183D521A25E6000F5B750 /* StandingsDetail */,
@@ -171,8 +194,43 @@
 				7F2183F821A4D72100F5B750 /* UEFAProjectTests.swift */,
 				7F2183FA21A4D72100F5B750 /* Info.plist */,
 				7F21840021A4D78D00F5B750 /* UEFAProtocolsTests.swift */,
+				7FE47BE421B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift */,
 			);
 			path = UEFAProjectTests;
+			sourceTree = "<group>";
+		};
+		7FD4A08421A5EC04002F963B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08521A5EC14002F963B /* Configurations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7FD4A08521A5EC14002F963B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08721A5EC54002F963B /* Services.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		7FD4A08921A5EEB4002F963B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A08A21A5EEF9002F963B /* UEFAServicesProtocol.swift */,
+				7FD4A08D21A5F0E3002F963B /* UEFAServicesImplementation.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7FD4A09021A60B3C002F963B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4A09221A60B3C002F963B /* Alamofire.framework */,
+				7FD4A09121A60B3C002F963B /* AlamofireImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +243,7 @@
 				7F2183AB21A2135B00F5B750 /* Sources */,
 				7F2183AC21A2135B00F5B750 /* Frameworks */,
 				7F2183AD21A2135B00F5B750 /* Resources */,
+				7FD4A09521A60B84002F963B /* Run Script - Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +319,7 @@
 				7F2183BD21A2135C00F5B750 /* LaunchScreen.storyboard in Resources */,
 				7F2183E221A2606200F5B750 /* UEFATeamDetailViewController.xib in Resources */,
 				7F2183E721A260AC00F5B750 /* UEFAStandingsDetailLargeCell.xib in Resources */,
+				7FD4A08821A5EC54002F963B /* Services.plist in Resources */,
 				7F2183BA21A2135C00F5B750 /* Assets.xcassets in Resources */,
 				7F2183D421A22F7500F5B750 /* UEFAStandingCell.xib in Resources */,
 				7F2183B821A2135B00F5B750 /* Main.storyboard in Resources */,
@@ -275,15 +335,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FD4A09521A60B84002F963B /* Run Script - Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			name = "Run Script - Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7F2183AB21A2135B00F5B750 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F2183DD21A2603800F5B750 /* UEFAStandingsDetailViewController.swift in Sources */,
+				7FD4A08E21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */,
 				7F2183D021A22DAC00F5B750 /* UEFAStandingsTableViewController.swift in Sources */,
 				7F2183D321A22F7500F5B750 /* UEFAStandingCell.swift in Sources */,
 				7F2183B321A2135B00F5B750 /* AppDelegate.swift in Sources */,
+				7FD4A08B21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */,
 				7F2183EE21A4D48C00F5B750 /* UEFAProtocols.swift in Sources */,
 				7F2183E121A2606200F5B750 /* UEFATeamDetailViewController.swift in Sources */,
 				7F2183E621A260AC00F5B750 /* UEFAStandingsDetailLargeCell.swift in Sources */,
@@ -294,7 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE47BE521B37F8700BBC4E2 /* UEFAServicesImplementationTests.swift in Sources */,
+				7FD4A08C21A5EEF9002F963B /* UEFAServicesProtocol.swift in Sources */,
 				7F21840321A4DA3700F5B750 /* UEFAProtocols.swift in Sources */,
+				7FD4A08F21A5F0E3002F963B /* UEFAServicesImplementation.swift in Sources */,
 				7F21840121A4D78D00F5B750 /* UEFAProtocolsTests.swift in Sources */,
 				7F2183F921A4D72100F5B750 /* UEFAProjectTests.swift in Sources */,
 			);
@@ -452,6 +540,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,6 +562,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +584,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,6 +608,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXC4836V89;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UEFAProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

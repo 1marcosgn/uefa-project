@@ -15,7 +15,6 @@ class UEFAStandingsTableViewController: UITableViewController {
 
         tableView.register(UINib(nibName: "UEFAStandingCell", bundle: nil), forCellReuseIdentifier: "UEFAStandingCell")
         tableView.tableFooterView = UIView()
-        
     }
 
     // MARK: - Table view data source

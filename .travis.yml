@@ -1,0 +1,15 @@
+language: swift
+osx_image: xcode10.0
+xcode_project: UEFAProject.xcodeproj
+xcode_scheme: UEFAProject
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
+cache:
+  directories:
+  - Carthage
+
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  #- carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
+  - carthage bootstrap --platform iOS
